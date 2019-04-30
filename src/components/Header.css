@@ -1,4 +1,23 @@
-.row1{
+.headerContainer{
     display:flex;
-    justify-content: center
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.headerSearch {
+    margin-bottom: 16;
+    /* align-self:  */
+}
+.headerShoppingIcon{
+ display:flex;
+ align-items: center;
+
+}
+.headerShoppingIcon a {
+    color: '#7DAFD4';
+    text-decoration:none
+}
+.headerShoppingIcon a :hover {
+    color: 'red';
 }

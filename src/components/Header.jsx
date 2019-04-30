@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import { Row, Col } from 'antd';
-import { Input, Select } from 'antd';
-import { Button } from 'antd';
-import Icon from '@material-ui/core/Icon';
+import { Input, Select, Button, Icon } from 'antd';
+import ShoppingIcon from '@material-ui/core/Icon';
 
 
 // import resourses from local dir 
@@ -14,25 +12,20 @@ class Header extends Component {
 
     render() {
 
-
         return (
-            <div>
-                <Row className = 'row1'>
-                    <Col xs>
-                        <div>
-                            <img src={siteLogo} alt='' />
-                        </div>
-                    </Col>
-                    <Col xs>
-                        <div style={{ marginBottom: 16 }}>
-                            <Input addonAfter={<Icon type="search" />} />
-                        </div>
-                    </Col>
-                    <Col xs>
-                    <Icon >shopping</Icon>
-                    </Col>
-                </Row>
+            <div className="headerContainer">
+                <div className="headerImage">
+                    <img src={siteLogo} alt="" />
+                </div>
 
+                <div className="headerSearch">
+                    <Input placeholder = 'Search' addonAfter={<Icon type="search" style = {{fontSize: '20px',color: '#7DAFD4' }} />} />
+                </div>
+
+                <div className="headerShoppingIcon">
+                    <ShoppingIcon style={{ fontSize: '40px', color: '#7DAFD4' }} theme="twoTone">shopping_cart</ShoppingIcon>
+                    <a href="#">Card (empty)</a>
+                </div>
             </div>
         );
     }
