@@ -1,0 +1,10 @@
+.rightIcon{
+    float: right;
+    margin-top:-125px;
+    margin-right: -21px; 
+}
+.leftIcon{
+    float: left;
+    margin-top:100;
+    margin-left: -19px; 
+}
